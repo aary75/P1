@@ -1,0 +1,77 @@
+GIt
+Commits
+Git manages the version of projects(history of projects)
+Every version of project called commit
+Git is very good in managing small changes or improvements in projects
+Each commit is the snapshot of the entire project
+
+Branches
+All commits belongs to a branch
+By default, there is a single branch and it is called master
+To make a stable project while working on project, create a separate branch. The default master branch does not see or interrupt in it. The new branch copies all content of the master branch and work on it and save it in Git.
+After merge the new branch, the master branch contains the new changes or features.
+
+Pull request
+A pull request branch is a request to merge a branch into new branch.
+The pull request is usually made by developer when changes made by other branches are over.
+During a pull request,team members can discuss,review and approve or deny your changes.
+
+Continuous improvements - Commits
+Maintain stability and development - Branches
+Improved quality - Pull request
+
+-> Version Control System
+Version control System manages history and improving files which we can call a project
+Version control System supports teamwork collaboration of the project and improves quality through facilating team communication and reviews.
+Manage small changes and easily test,fix or undo ideas and changes.
+
+Git is commonly used to mangae the source code related to software projects and Github is a distributed version control system
+
+ A distributed version control system is a copy of version control system
+It has mainly three characteristics. 
+Each user has a local copy of complete history of project called repository.
+By having remote remosity at every user, you can also work offline and content can be synchronized.
+
+A git repository contains  a series of snapshots of the project over time
+Git command [--flags] [arguments] Some commands use file name as argument like add command
+flags change the command behaviour 
+Verticle bar used as or in git. 
+[Optional] optional commands are always used in square brackets
+placeholder are used in angled brackets like <placeholder>. To change placeholder in actual value, place placeholder with angled brackets in square brackets [<placeholder>]
+() are used for grouping
+Two stand alone dashes(--) are used to disambiguate teh command.
+Three dots are specifying the multiple occurences are possible.
+
+Working Directory is the location on your computer which contains files and directories of a single commit of your project.
+Staging area(Index) is the list of all files that you are planned to included in next commit that you make.
+The local repository contains all the commits that you have been made in the project.
+Working directory, Staging area, The local repository are commonly contained in single directory in your computer which is called project repository.
+The remote repository contains the version of the project,contains all commits of the project.It usually located in the data center or in the cloud.It is often considered the official state of the project.
+
+Create a git repository
+1.Git init - to initialize a repository 
+2.mkdir  - to create a directory 
+3. cd - to change current directory into required directory
+4.to check what elements in your repository or not - ls -a  -> It gives full list of elements 
+5. Git status is used to show status of files, working tree and staging area.
+6.Git add is used to add commit,files or directories in staging area.
+You can all tracked files and directories by using git add .  . 
+7. GIt status -s used to give status is short message .
+If file is tracked, then a Green color Capital A begins the line otherwise double question mark begins the line with file name.
+8. To add content in file, echo command is used. Ex-:
+echo "feature 1" > filA.txt 
+Now if we use git status -s then it gives AM in starting which means Added and Modified . Here two versions of a commit exists.
+9. to execute commit, use git commit with short message by -m flag
+10. git log is used to get commit history 
+11. --oneline option in git log command give git commit history in condensed form.
+If you only interested to see recent commits, then you can also add number to tell how many commits are you want to show .
+Ex. git log --oneline -2
+
+
+Remote Repository 
+It acts as the central state of truth or official state of project.
+Hosted options for remote repository is BitBucket and GitHub.
+No working area and staging area in remote repository.
+By convention, name of remote repository ends with .git repository.
+
+Clone of remote repository
